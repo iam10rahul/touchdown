@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <title>LM10 FootSite</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: 'Nunito', sans-serif;
+        color: whitesmoke;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/lm10.jpg');
+        /* height: 1100px; */
+    }
+
+    .left {
+        position: absolute;
+        left: 33px;
+        top: 38px;
+        display: inline-block;
+        /* border: 2px solid rgb(230, 143, 12); */
+
+    }
+
+    .left div {
+        line-height: 11px;
+        text-align: center;
+    }
+
+    .left img {
+        filter: invert(100%)
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 38px auto;
+        /* border: 2px solid rgb(176, 212, 32); */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 33px;
+        top: 38px;
+        display: inline-block;
+        /* border: 2px solid rgb(35, 240, 223); */
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 11px;
+    }
+
+    .navbar li a {
+        color: antiquewhite;
+        text-decoration: none;
+        padding: 33px;
+
+
+    }
+
+    .navbar li a:hover {
+        color: aqua;
+        text-decoration: none;
+        padding: 33px;
+        text-decoration: underline;
+    }
+
+    .btn {
+        font-family: 'Nunito', sans-serif;
+        color: rgb(209, 151, 42);
+        margin: 8px 0px;
+        padding: 16px 19px;
+        background-color: rgba(68, 63, 63, 0.105);
+        border: 2px solid brown;
+        border-radius: 2px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: chartreuse;
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 120px 327px;
+        padding: 180px 19px;
+        width: 33%;
+        border-radius: 33px;
+    }
+
+    .form-group input {
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+        font-size: larger;
+        display: block;
+        width: 290px;
+        padding: 40px;
+        margin: 8px;
+        border: 3px solid maroon;
+
+    }
+
+    .container h1 {
+        text-align: left;
+    }
+
+    .container button {
+        float: left;
+        margin: auto;
+        width: 22%;
+
+    }
+</style>
+
+<body>
+    <header class="class">
+        <div class="left">
+            <!-- left box for logo -->
+
+            <img src="img/logo.jpg" alt="The Logo">
+            <div>The FootSite</div>
+
+
+
+        </div>
+        <div class="mid">
+            <!-- middle box for navigation -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Foot Center</a> </li>
+                <li><a href="#">Contact US</a> </li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call US</button>
+            <button class="btn">Email</button>
+
+        </div>
+
+        <div class="container">
+            <h1>
+                Join the Best Football Club
+
+            </h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="" placeholder="Enter Your Email ID">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" placeholder="Enter Your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your GenDer">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" placeholder="Enter Your Pincode">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="form-group">
+                    <input type="date" name="" placeholder="Enter Your DOB">
+                </div>
+
+                <button class="btn">Submit</button>
+                <input type="reset" name="Reset">
+            </form>
+        </div>
+
+    </header>
+</body>
+
+</html>
